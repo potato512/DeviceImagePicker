@@ -1,6 +1,6 @@
 //
 //  ImagePickerBlockVC.h
-//  DemoImagePhoto
+//  zhangshaoyu
 //
 //  Created by zhangshaoyu on 15/4/30.
 //  Copyright (c) 2015年 zhangshaoyu. All rights reserved.
@@ -27,8 +27,15 @@ typedef enum
 /// 根据数据源异常处理
 - (BOOL)isValidWithPickerSourceType;
 
-/// 设置代码块回调函数（拍照模式时才保存到相册）
-- (void)getPickerImage:(void (^)(UIImage *image))succeed error:(void (^)(void))error PhotosAlbum:(BOOL)save saveStart:(void (^)(void))saveStart saveFinish:(void (^)(SavePhotoStatus status))saveFinish;
+/**
+ *设置代码块回调函数（拍照模式时才保存到相册）
+ *(void (^)(UIImage *image))succeed：获取相册相片，或拍照相片成功回调
+ *(void (^)(void))error：获取相片失败回调
+ *PhotosAlbum:(BOOL)isSave：拍照模式时，是否保存相片到相册
+ *(void (^)(void))saveStart：拍照模式时，且是保存到相册，即开始保存相片回调
+ *(void (^)(SavePhotoStatus status))saveFinish：拍照模式时，且是保存到相册，即保存相片完成回调
+*/
+- (void)getPickerImage:(void (^)(UIImage *image))succeed error:(void (^)(void))error PhotosAlbum:(BOOL)isSave saveStart:(void (^)(void))saveStart saveFinish:(void (^)(SavePhotoStatus status))saveFinish;
 
 @end
 
@@ -49,16 +56,17 @@ typedef enum
  步骤5 异常判断
  if ([self.imagePickerVC isValidWithPickerSourceType])
  {
- [self presentViewController:self.imagePickerVC animated:YES completion:NULL];
- 
- [self.imagePickerVC getPickerImage:^(UIImage *image) {
- NSLog(@"get image success");
- } error:^{
- NSLog(@"get image error");
- } PhotosAlbum:isSave saveStart:^{
- NSLog(@"save image start");
- } saveFinish:^(SavePhotoStatus status) {
- NSLog(@"save image %@", (SavePhotoSuccess == status ? @"成功" : @"失败"));
- }];
+     [self presentViewController:self.imagePickerVC animated:YES completion:NULL];
+     
+     [self.imagePickerVC getPickerImage:^(UIImage *image) {
+         NSLog(@"get image success");
+     } error:^{
+         NSLog(@"get image error");
+     } PhotosAlbum:isSave saveStart:^{
+         NSLog(@"save image start");
+     } saveFinish:^(SavePhotoStatus status) {
+         NSLog(@"save image %@", (SavePhotoSuccess == status ? @"成功" : @"失败"));
+     }];
  }
  */
+

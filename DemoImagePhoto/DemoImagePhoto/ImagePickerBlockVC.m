@@ -1,6 +1,6 @@
 //
 //  ImagePickerBlockVC.m
-//  DemoImagePhoto
+//  zhangshaoyu
 //
 //  Created by zhangshaoyu on 15/4/30.
 //  Copyright (c) 2015年 zhangshaoyu. All rights reserved.
@@ -102,12 +102,12 @@
 
 #pragma mark - 代码块回调
 
-- (void)getPickerImage:(void (^)(UIImage *image))succeed error:(void (^)(void))error PhotosAlbum:(BOOL)save saveStart:(void (^)(void))saveStart saveFinish:(void (^)(SavePhotoStatus status))saveFinish
+- (void)getPickerImage:(void (^)(UIImage *image))succeed error:(void (^)(void))error PhotosAlbum:(BOOL)isSave saveStart:(void (^)(void))saveStart saveFinish:(void (^)(SavePhotoStatus status))saveFinish
 {
     self.succeedBack = [succeed copy];
     self.errorBack = [error copy];
     
-    self.isSave = save;
+    self.isSave = isSave;
     if (self.isSave)
     {
         self.startSave = [saveStart copy];
