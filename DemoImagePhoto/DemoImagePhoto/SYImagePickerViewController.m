@@ -1,26 +1,31 @@
 //
-//  ImagePickerBlockVC.m
+//  SYImagePickerViewController.m
 //  zhangshaoyu
 //
 //  Created by zhangshaoyu on 15/4/30.
 //  Copyright (c) 2015年 zhangshaoyu. All rights reserved.
 //
 
-#import "ImagePickerBlockVC.h"
+#import "SYImagePickerViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
-@interface ImagePickerBlockVC () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface SYImagePickerViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-@property (nonatomic, copy) void (^succeedBack)(UIImage *image); // 设置代码块属性-成功
-@property (nonatomic, copy) void (^errorBack)(void);             // 设置代码块属性-失败
+// 设置代码块属性-成功
+@property (nonatomic, copy) void (^succeedBack)(UIImage *image);
+// 设置代码块属性-失败
+@property (nonatomic, copy) void (^errorBack)(void);
 
-@property (nonatomic, assign) BOOL isSave;                              // 设置代码块属性-是否保存图片
-@property (nonatomic, copy) void (^startSave)(void);                    // 设置代码块属性-保存图片开始
-@property (nonatomic, copy) void (^finishSave)(SavePhotoStatus status); // 设置代码块属性-保存图片完成
+// 设置代码块属性-是否保存图片
+@property (nonatomic, assign) BOOL isSave;
+// 设置代码块属性-保存图片开始
+@property (nonatomic, copy) void (^startSave)(void);
+// 设置代码块属性-保存图片完成
+@property (nonatomic, copy) void (^finishSave)(SavePhotoStatus status);
 
 @end
 
-@implementation ImagePickerBlockVC
+@implementation SYImagePickerViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

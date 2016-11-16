@@ -1,5 +1,5 @@
 //
-//  ImagePickerBlockVC.h
+//  SYImagePickerViewController.h
 //  zhangshaoyu
 //
 //  Created by zhangshaoyu on 15/4/30.
@@ -19,7 +19,7 @@ typedef enum
     
 }SavePhotoStatus;
 
-@interface ImagePickerBlockVC : UIImagePickerController
+@interface SYImagePickerViewController : UIImagePickerController
 
 /// 设置属性源
 @property (nonatomic, assign) UIImagePickerControllerSourceType pickerSourceType;

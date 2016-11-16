@@ -14,7 +14,7 @@
 		A76D66341AE72BD2002ECEE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76D66331AE72BD2002ECEE2 /* Images.xcassets */; };
 		A76D66371AE72BD2002ECEE2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76D66351AE72BD2002ECEE2 /* LaunchScreen.xib */; };
 		A76D66431AE72BD2002ECEE2 /* DemoImagePhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D66421AE72BD2002ECEE2 /* DemoImagePhotoTests.m */; };
-		A7A0D0B41AF1C74000079E41 /* ImagePickerBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A0D0B31AF1C74000079E41 /* ImagePickerBlockVC.m */; };
+		A7A0D0B41AF1C74000079E41 /* SYImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A0D0B31AF1C74000079E41 /* SYImagePickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		A76D663C1AE72BD2002ECEE2 /* DemoImagePhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoImagePhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76D66411AE72BD2002ECEE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A76D66421AE72BD2002ECEE2 /* DemoImagePhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoImagePhotoTests.m; sourceTree = "<group>"; };
-		A7A0D0B21AF1C74000079E41 /* ImagePickerBlockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerBlockVC.h; sourceTree = "<group>"; };
-		A7A0D0B31AF1C74000079E41 /* ImagePickerBlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerBlockVC.m; sourceTree = "<group>"; };
+		A7A0D0B21AF1C74000079E41 /* SYImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYImagePickerViewController.h; sourceTree = "<group>"; };
+		A7A0D0B31AF1C74000079E41 /* SYImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYImagePickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 				A76D662B1AE72BD2002ECEE2 /* AppDelegate.m */,
 				A76D662D1AE72BD2002ECEE2 /* ViewController.h */,
 				A76D662E1AE72BD2002ECEE2 /* ViewController.m */,
-				A7A0D0B21AF1C74000079E41 /* ImagePickerBlockVC.h */,
-				A7A0D0B31AF1C74000079E41 /* ImagePickerBlockVC.m */,
+				A7A0D0B21AF1C74000079E41 /* SYImagePickerViewController.h */,
+				A7A0D0B31AF1C74000079E41 /* SYImagePickerViewController.m */,
 				A76D66301AE72BD2002ECEE2 /* Main.storyboard */,
 				A76D66331AE72BD2002ECEE2 /* Images.xcassets */,
 				A76D66351AE72BD2002ECEE2 /* LaunchScreen.xib */,
@@ -224,7 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7A0D0B41AF1C74000079E41 /* ImagePickerBlockVC.m in Sources */,
+				A7A0D0B41AF1C74000079E41 /* SYImagePickerViewController.m in Sources */,
 				A76D662F1AE72BD2002ECEE2 /* ViewController.m in Sources */,
 				A76D662C1AE72BD2002ECEE2 /* AppDelegate.m in Sources */,
 				A76D66291AE72BD2002ECEE2 /* main.m in Sources */,

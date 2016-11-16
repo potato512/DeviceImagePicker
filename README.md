@@ -1,44 +1,44 @@
-# DeviceImagePicker
+# SYImagePickerViewController
 
 ##iPhone设备拍照和相册图片的使用方法封装
 通常直接调用手机相册，或拍照时，设置使用代理较麻烦，所以封装成block模式进行使用，代码紧凑，且易于查看。
 
 ##使用示例
-```javascript
+~~~ javascript
 //步骤1 导入头文件
-#import "ImagePickerBlockVC.h"
-```
+#import "SYImagePickerViewController.h"
 
-```javascript
+
 // 步骤2 定义属性
-@property (nonatomic, strong) ImagePickerBlockVC *imagePickerVC;
-```
+@property (nonatomic, strong) SYImagePickerViewController *imagePicker;
 
-```javascript
+
 // 步骤3 实例化
- self.imagePickerVC = [[ImagePickerBlockVC alloc] init];
-```
+self.imagePicker = [[SYImagePickerViewController alloc] init];
 
-```javascript
+
 // 步骤4 设置数据源
-self.imagePickerVC.pickerSourceType = UIImagePickerControllerSourceTypeCamera;
-```
+self.imagePicker.pickerSourceType = UIImagePickerControllerSourceTypePhotoLibrary;
 
-```javascript
 // 步骤5 异常判断
-if ([self.imagePickerVC isValidWithPickerSourceType])
+if ([self.imagePicker isValidWithPickerSourceType])
 {
-    [self presentViewController:self.imagePickerVC animated:YES completion:NULL];
- 
-    [self.imagePickerVC getPickerImage:^(UIImage *image) {
-        NSLog(@"get image success");
+    [self presentViewController:self.imagePicker animated:YES completion:NULL];
+
+    ViewController __weak *weakSelf = self;
+    [self.imagePicker getPickerImage:^(UIImage *image) {
+        weakSelf.mainImageView.image = image;
     } error:^{
-        NSLog(@"get image error");
-    } PhotosAlbum:isSave saveStart:^{
-        NSLog(@"save image start");
+
+    } PhotosAlbum:NO saveStart:^{
+
     } saveFinish:^(SavePhotoStatus status) {
-        NSLog(@"save image %@", (SavePhotoSuccess == status ? @"成功" : @"失败"));
+
     }];
 }
- ```
+
+```
+
+# 效果图
+![ImagePickerVC](./ImagePickerVC.gif)
  

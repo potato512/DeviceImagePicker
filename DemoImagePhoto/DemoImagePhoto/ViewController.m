@@ -7,11 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "ImagePickerBlockVC.h"
+#import "SYImagePickerViewController.h"
 
 @interface ViewController ()
 
-@property (nonatomic, strong) ImagePickerBlockVC *imagePicker;
+@property (nonatomic, strong) SYImagePickerViewController *imagePicker;
 
 @property (nonatomic, strong) UIImageView *mainImageView;
 
@@ -62,7 +62,7 @@
     
     if (!self.imagePicker)
     {
-        self.imagePicker = [[ImagePickerBlockVC alloc] init];
+        self.imagePicker = [[SYImagePickerViewController alloc] init];
     }
 }
 
