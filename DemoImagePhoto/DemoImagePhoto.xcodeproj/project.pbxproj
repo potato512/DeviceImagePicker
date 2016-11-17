@@ -14,7 +14,16 @@
 		A76D66341AE72BD2002ECEE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76D66331AE72BD2002ECEE2 /* Images.xcassets */; };
 		A76D66371AE72BD2002ECEE2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76D66351AE72BD2002ECEE2 /* LaunchScreen.xib */; };
 		A76D66431AE72BD2002ECEE2 /* DemoImagePhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D66421AE72BD2002ECEE2 /* DemoImagePhotoTests.m */; };
-		A7A0D0B41AF1C74000079E41 /* SYImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A0D0B31AF1C74000079E41 /* SYImagePickerViewController.m */; };
+		A7C295491DDD87CF004C5457 /* SYImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C2952F1DDD87CF004C5457 /* SYImagePickerViewController.m */; };
+		A7C2954A1DDD87CF004C5457 /* SYImagePickerQBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C295321DDD87CF004C5457 /* SYImagePickerQBViewController.m */; };
+		A7C2954B1DDD87CF004C5457 /* QBAssetCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C295361DDD87CF004C5457 /* QBAssetCollectionViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7C2954C1DDD87CF004C5457 /* QBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C295381DDD87CF004C5457 /* QBImagePickerController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7C2954D1DDD87CF004C5457 /* QBImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A7C2953A1DDD87CF004C5457 /* QBImagePickerController.bundle */; };
+		A7C2954E1DDD87CF004C5457 /* QBImagePickerAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C2953E1DDD87CF004C5457 /* QBImagePickerAssetCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7C2954F1DDD87CF004C5457 /* QBImagePickerAssetView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C295411DDD87CF004C5457 /* QBImagePickerAssetView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7C295501DDD87CF004C5457 /* QBImagePickerFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C295441DDD87CF004C5457 /* QBImagePickerFooterView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7C295511DDD87CF004C5457 /* QBImagePickerGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C295461DDD87CF004C5457 /* QBImagePickerGroupCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7C295521DDD87CF004C5457 /* QBImagePickerVideoInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C295481DDD87CF004C5457 /* QBImagePickerVideoInfoView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +50,29 @@
 		A76D663C1AE72BD2002ECEE2 /* DemoImagePhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoImagePhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76D66411AE72BD2002ECEE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A76D66421AE72BD2002ECEE2 /* DemoImagePhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoImagePhotoTests.m; sourceTree = "<group>"; };
-		A7A0D0B21AF1C74000079E41 /* SYImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYImagePickerViewController.h; sourceTree = "<group>"; };
-		A7A0D0B31AF1C74000079E41 /* SYImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYImagePickerViewController.m; sourceTree = "<group>"; };
+		A7C2952E1DDD87CF004C5457 /* SYImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYImagePickerViewController.h; sourceTree = "<group>"; };
+		A7C2952F1DDD87CF004C5457 /* SYImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYImagePickerViewController.m; sourceTree = "<group>"; };
+		A7C295311DDD87CF004C5457 /* SYImagePickerQBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYImagePickerQBViewController.h; sourceTree = "<group>"; };
+		A7C295321DDD87CF004C5457 /* SYImagePickerQBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYImagePickerQBViewController.m; sourceTree = "<group>"; };
+		A7C295351DDD87CF004C5457 /* QBAssetCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetCollectionViewController.h; sourceTree = "<group>"; };
+		A7C295361DDD87CF004C5457 /* QBAssetCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetCollectionViewController.m; sourceTree = "<group>"; };
+		A7C295371DDD87CF004C5457 /* QBImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerController.h; sourceTree = "<group>"; };
+		A7C295381DDD87CF004C5457 /* QBImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerController.m; sourceTree = "<group>"; };
+		A7C2953A1DDD87CF004C5457 /* QBImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QBImagePickerController.bundle; sourceTree = "<group>"; };
+		A7C2953C1DDD87CF004C5457 /* QBAssetCollectionViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetCollectionViewControllerDelegate.h; sourceTree = "<group>"; };
+		A7C2953D1DDD87CF004C5457 /* QBImagePickerAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerAssetCell.h; sourceTree = "<group>"; };
+		A7C2953E1DDD87CF004C5457 /* QBImagePickerAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerAssetCell.m; sourceTree = "<group>"; };
+		A7C2953F1DDD87CF004C5457 /* QBImagePickerAssetCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerAssetCellDelegate.h; sourceTree = "<group>"; };
+		A7C295401DDD87CF004C5457 /* QBImagePickerAssetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerAssetView.h; sourceTree = "<group>"; };
+		A7C295411DDD87CF004C5457 /* QBImagePickerAssetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerAssetView.m; sourceTree = "<group>"; };
+		A7C295421DDD87CF004C5457 /* QBImagePickerAssetViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerAssetViewDelegate.h; sourceTree = "<group>"; };
+		A7C295431DDD87CF004C5457 /* QBImagePickerFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerFooterView.h; sourceTree = "<group>"; };
+		A7C295441DDD87CF004C5457 /* QBImagePickerFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerFooterView.m; sourceTree = "<group>"; };
+		A7C295451DDD87CF004C5457 /* QBImagePickerGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerGroupCell.h; sourceTree = "<group>"; };
+		A7C295461DDD87CF004C5457 /* QBImagePickerGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerGroupCell.m; sourceTree = "<group>"; };
+		A7C295471DDD87CF004C5457 /* QBImagePickerVideoInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerVideoInfoView.h; sourceTree = "<group>"; };
+		A7C295481DDD87CF004C5457 /* QBImagePickerVideoInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerVideoInfoView.m; sourceTree = "<group>"; };
+		A7C295531DDD87F3004C5457 /* SYImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYImagePicker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +118,7 @@
 				A76D662B1AE72BD2002ECEE2 /* AppDelegate.m */,
 				A76D662D1AE72BD2002ECEE2 /* ViewController.h */,
 				A76D662E1AE72BD2002ECEE2 /* ViewController.m */,
-				A7A0D0B21AF1C74000079E41 /* SYImagePickerViewController.h */,
-				A7A0D0B31AF1C74000079E41 /* SYImagePickerViewController.m */,
+				A7C2952D1DDD87CF004C5457 /* SYImagePicker */,
 				A76D66301AE72BD2002ECEE2 /* Main.storyboard */,
 				A76D66331AE72BD2002ECEE2 /* Images.xcassets */,
 				A76D66351AE72BD2002ECEE2 /* LaunchScreen.xib */,
@@ -122,6 +151,76 @@
 				A76D66411AE72BD2002ECEE2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7C2952D1DDD87CF004C5457 /* SYImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A7C2952E1DDD87CF004C5457 /* SYImagePickerViewController.h */,
+				A7C2952F1DDD87CF004C5457 /* SYImagePickerViewController.m */,
+				A7C295301DDD87CF004C5457 /* SYImageQBPicker */,
+				A7C295531DDD87F3004C5457 /* SYImagePicker.h */,
+			);
+			path = SYImagePicker;
+			sourceTree = "<group>";
+		};
+		A7C295301DDD87CF004C5457 /* SYImageQBPicker */ = {
+			isa = PBXGroup;
+			children = (
+				A7C295311DDD87CF004C5457 /* SYImagePickerQBViewController.h */,
+				A7C295321DDD87CF004C5457 /* SYImagePickerQBViewController.m */,
+				A7C295331DDD87CF004C5457 /* QBImagePicker */,
+			);
+			path = SYImageQBPicker;
+			sourceTree = "<group>";
+		};
+		A7C295331DDD87CF004C5457 /* QBImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A7C295341DDD87CF004C5457 /* controllers */,
+				A7C295391DDD87CF004C5457 /* resources */,
+				A7C2953B1DDD87CF004C5457 /* views */,
+			);
+			path = QBImagePicker;
+			sourceTree = "<group>";
+		};
+		A7C295341DDD87CF004C5457 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7C295351DDD87CF004C5457 /* QBAssetCollectionViewController.h */,
+				A7C295361DDD87CF004C5457 /* QBAssetCollectionViewController.m */,
+				A7C295371DDD87CF004C5457 /* QBImagePickerController.h */,
+				A7C295381DDD87CF004C5457 /* QBImagePickerController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		A7C295391DDD87CF004C5457 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				A7C2953A1DDD87CF004C5457 /* QBImagePickerController.bundle */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		A7C2953B1DDD87CF004C5457 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A7C2953C1DDD87CF004C5457 /* QBAssetCollectionViewControllerDelegate.h */,
+				A7C2953D1DDD87CF004C5457 /* QBImagePickerAssetCell.h */,
+				A7C2953E1DDD87CF004C5457 /* QBImagePickerAssetCell.m */,
+				A7C2953F1DDD87CF004C5457 /* QBImagePickerAssetCellDelegate.h */,
+				A7C295401DDD87CF004C5457 /* QBImagePickerAssetView.h */,
+				A7C295411DDD87CF004C5457 /* QBImagePickerAssetView.m */,
+				A7C295421DDD87CF004C5457 /* QBImagePickerAssetViewDelegate.h */,
+				A7C295431DDD87CF004C5457 /* QBImagePickerFooterView.h */,
+				A7C295441DDD87CF004C5457 /* QBImagePickerFooterView.m */,
+				A7C295451DDD87CF004C5457 /* QBImagePickerGroupCell.h */,
+				A7C295461DDD87CF004C5457 /* QBImagePickerGroupCell.m */,
+				A7C295471DDD87CF004C5457 /* QBImagePickerVideoInfoView.h */,
+				A7C295481DDD87CF004C5457 /* QBImagePickerVideoInfoView.m */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +305,7 @@
 			files = (
 				A76D66321AE72BD2002ECEE2 /* Main.storyboard in Resources */,
 				A76D66371AE72BD2002ECEE2 /* LaunchScreen.xib in Resources */,
+				A7C2954D1DDD87CF004C5457 /* QBImagePickerController.bundle in Resources */,
 				A76D66341AE72BD2002ECEE2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,10 +324,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7A0D0B41AF1C74000079E41 /* SYImagePickerViewController.m in Sources */,
+				A7C295491DDD87CF004C5457 /* SYImagePickerViewController.m in Sources */,
+				A7C2954C1DDD87CF004C5457 /* QBImagePickerController.m in Sources */,
+				A7C2954F1DDD87CF004C5457 /* QBImagePickerAssetView.m in Sources */,
+				A7C2954A1DDD87CF004C5457 /* SYImagePickerQBViewController.m in Sources */,
+				A7C295501DDD87CF004C5457 /* QBImagePickerFooterView.m in Sources */,
+				A7C2954B1DDD87CF004C5457 /* QBAssetCollectionViewController.m in Sources */,
 				A76D662F1AE72BD2002ECEE2 /* ViewController.m in Sources */,
 				A76D662C1AE72BD2002ECEE2 /* AppDelegate.m in Sources */,
+				A7C295511DDD87CF004C5457 /* QBImagePickerGroupCell.m in Sources */,
+				A7C295521DDD87CF004C5457 /* QBImagePickerVideoInfoView.m in Sources */,
 				A76D66291AE72BD2002ECEE2 /* main.m in Sources */,
+				A7C2954E1DDD87CF004C5457 /* QBImagePickerAssetCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
