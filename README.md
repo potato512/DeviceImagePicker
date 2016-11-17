@@ -78,4 +78,7 @@ UINavigationController *navMoreQB = [[UINavigationController alloc] initWithRoot
 
 # 效果图
 ![ImagePickerVC](./ImagePickerVC.gif)
+
+# 注意事项
+![imagepicker.png](./imagepicker.png)
  
