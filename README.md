@@ -1,11 +1,12 @@
 # SYImagePicker
 
-##iPhone设备拍照和相册图片的使用方法封装，及多图选择库二次封装
+#### iPhone设备拍照和相册图片的使用方法封装，及多图选择库二次封装
 通常直接调用手机相册，或拍照时，设置使用代理较麻烦，所以封装成block模式进行使用，代码紧凑，且易于查看。
 
-##使用示例
+#### 使用示例
  * SYImagePickerViewController（拍照，或单图选择）
-~~~ javascript
+ 
+````
 //步骤1 导入头文件
 #import "SYImagePicker.h"
 
@@ -34,12 +35,11 @@ if ([self.imagePicker isValidWithPickerSourceType])
 
     }];
 }
-
-```
+````
 
  * SYImagePickerQBViewController（多图选择）
-~~~ javascript
-
+ 
+````
 //步骤1 导入头文件
 #import "SYImagePicker.h"
 
@@ -73,12 +73,15 @@ self.imageQBPicker.maximumNumberOfSelection = 10;
 // 步骤6 视图跳转
 UINavigationController *navMoreQB = [[UINavigationController alloc] initWithRootViewController:self.imageQBPicker];
 [self presentViewController:navMoreQB animated:YES completion:NULL];
+````
 
-```
+#### 效果图
 
-# 效果图
 ![ImagePickerVC](./ImagePickerVC.gif)
 
-# 注意事项
+#### 注意事项
+
 ![imagepicker.png](./imagepicker.png)
+
+
  
